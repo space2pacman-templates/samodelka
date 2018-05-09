@@ -1,0 +1,46 @@
+﻿.choose-box {
+    margin-top: 20px;
+    background: $w01;
+    font-family: $UF;
+    font-size: 14px;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.05);
+
+    &__header {
+        padding: 14px 12px;
+        padding-bottom: 14px;
+        border-bottom: 1px solid $g03;
+        font-weight: 900;
+    }
+
+    &__select-group {
+        padding: 10px 12px;
+    }
+
+    &__select-button {
+        border: 1px solid $g03;
+        border-radius: 4px;
+        padding: 7px 10px;
+        width: 240px;
+        margin-right: 5px;
+        outline: none;
+        font-weight: 600;
+        background: $w01;
+        background-image: url(../img/icon-arrow-down.svg);
+        background-size: 10px;
+        background-repeat: no-repeat;
+        background-position: 96%;
+        color: $b;
+    }
+
+    &__button {
+        display: inline-block;
+        padding: 8px 24px;
+        border-radius: 4px;
+        background-color: $b;
+        margin-right: 0;
+        color: $w01;
+        cursor: pointer;
+    }
+
+}

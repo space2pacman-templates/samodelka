@@ -1,0 +1,43 @@
+﻿.footer {
+    border-radius: 4px;
+    margin: 50px 0px 50px 0px;
+    background-color: $g08;
+    padding: 20px 0px;
+    font-family: $UF;
+    font-weight: 500;
+    font-size: 14px;
+    color: $w01;
+    text-align: center;
+
+    li {
+        display: inline-block;
+        padding: 7px 18px;
+        padding-bottom: 9px;
+        position: relative;
+
+        &:after {
+            content: "";
+            width: 1px;
+            height: 10px;
+            border-left: 1px solid $w01;
+            border-right: 1px solid $w01;
+            opacity: 0.3;
+            display: block;
+            position: absolute;
+            right: 0px;
+            top: 10px;
+        }
+
+        &:last-child:after {
+            display:none;
+        }
+
+    }
+
+    &__copyright {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        color: $g04;
+    }
+
+}

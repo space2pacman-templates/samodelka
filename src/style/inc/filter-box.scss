@@ -1,0 +1,200 @@
+﻿.filter-box {
+    margin-top: 20px;
+    font-family: $UF;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.05);
+
+    &__row {
+
+        background: $w01;
+
+        @include clearfix;
+
+        &:nth-child(even) {
+            background: $w03;
+            border-top: 1px solid $g03;
+            border-bottom: 1px solid $g03;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &::selection {
+            background: none;
+        }
+
+    }
+
+    &__row-brand {
+        overflow: hidden;
+            height: 38px;
+    }
+
+    &__header {
+        display: inline-block;
+        font-weight: 900;
+        padding: 13px 10px;
+
+        &::selection {
+            background: none;
+        }
+
+    }
+
+    &__more-brand {
+        float: right;
+        border-radius: 3px;
+        border: solid 1px $b;
+        color: $b;
+        padding: 2px 4px;
+        margin-top: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    &__input-filter {
+        outline: none;
+        border: none;
+        width: 75%;
+        height: 30px;
+        margin-left: -5px;
+        font-style: italic;
+    }
+
+    &__input-box {
+        display: inline-block;
+        position: relative;
+        top: 4px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+
+        &::selection {
+            background: none;
+        }
+
+    }
+
+    &__label {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        position: relative;
+        border-radius: 4px;
+        background-color: $w01;
+        box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.1);
+        border: solid 1px $g03;
+        box-sizing: border-box;
+        cursor: pointer;
+
+        &::selection {
+            background: none;
+        }
+
+        &:before {
+            content: '';
+            background: $w01;
+            position: absolute;
+        }
+
+    }
+
+    &__brand-name {
+        display: inline-block;
+        vertical-align: super;
+        padding-left: 10px;
+        margin-left: -4px;
+        color: $b;
+        cursor: pointer;
+
+        &::selection {
+            background: none;
+        }
+
+    }
+    
+    &__checkbox {
+        display: none;
+
+        &:checked ~ label {
+            color: $bl;
+            font-weight: 900;
+        }
+
+        &:checked ~ .icon-ok:before {
+            content: '\e805';
+            position: absolute;
+            font-size: 14px;
+            top: 2px;
+        }
+
+    }
+
+    &__slider {
+
+        display: table;
+        z-index: 0;
+        position: relative;
+        width: calc(100% - 60px);
+        color: $g07;
+        font-weight: 900;
+        height: 40px;
+
+        .noUi-horizontal .noUi-handle {
+            width: 21px;
+            height: 30px;
+            border-radius: 4px;
+            background-color: $w01;
+            border: solid 2px $b;
+            box-shadow: none;
+            top: -12px;
+            left: -10px;
+            outline: none;
+        }
+
+        .noUi-connect {
+            background-color: $g04;
+            margin: 2px;
+            border-radius: 0;
+           
+        }
+
+        .noUi-handle:after, .noUi-handle:before {
+            content: "";
+            height: 10px;
+            background: $bl;
+            left: 7px;
+            top: 8px;
+        }
+
+        .noUi-handle:after {
+            left: 9px;
+        }
+
+    }
+
+    &__slider-number {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100px;
+
+        &--left {
+            text-align: right;
+        }
+
+    }
+
+    &__slider-scale {
+        border-radius: 4px;
+        background-color: $w01;
+        box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.1);
+        border: solid 1px $g03;
+        height: 10px;
+        margin: 15px 20px 0px 20px;
+        display: block;
+    }
+
+}

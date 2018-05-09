@@ -1,0 +1,56 @@
+﻿body {
+    background: $g01;
+}
+
+b {
+    font-weight: 900;
+}
+
+::placeholder {
+    color: $g04;
+}
+
+.g {
+    &__hide {
+        display: none !important;
+    }
+
+    &__float {
+
+        &--left {
+            float: left;
+        }
+
+    }
+
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.row {
+    width: 100%;
+    display: table;
+}
+
+.col {
+
+    &__left {
+        width: 260px;
+        display: table-cell;
+    }
+    
+
+    &__right {
+        margin-left: 20px;
+        display: table-cell;
+        border-left: 20px solid $g01;
+        position: relative;
+        
+        padding-right: 1px;
+    }
+
+}

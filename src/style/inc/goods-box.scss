@@ -1,0 +1,162 @@
+﻿.goods-box {
+    margin-top: 20px;
+    padding: 20px 20px;
+    font-family: $UF;
+    font-size: 14px;
+    font-weight: 600;
+    background: $w01;
+    border-radius: 3px;
+    background-color: $w01;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.05);
+
+    &__header {
+        font-size: 18px;
+    }
+
+    &__col {
+        margin-top: 20px;
+        display: table;
+    }
+
+    &__col-left {
+        display: table-cell;
+        width: 185px;
+    }
+
+    &__col-right {
+        display: table-cell;
+        vertical-align: top;
+        padding: 5px 18px;
+    }
+
+    &__img-link {
+        outline: none;
+        margin-right: 5px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+    }
+
+    &__img-title {
+        font-family: $UF;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    &__img {
+
+        &--big {
+            width: 260px;
+            margin-bottom: 15px;
+        }
+
+        &--small {
+            width: 70px;
+            border: 1px solid $g03;
+        }
+
+    }
+
+    &__row {
+        line-height: 22px;
+    }
+
+    &__title {
+        color: $g08;
+        display: inline-block;
+
+        &--black {
+            color: $bl;
+        }
+
+    }
+
+    &__value {
+        display: inline-block;
+    }
+
+    &__link {
+        color: $b;
+    }
+
+    &__desc {
+        margin-top: 20px;
+    }
+
+    &__select-group {
+        margin-top: 18px;
+    }
+
+    &__select {
+        border-radius: 4px;
+        background-color: $w01;
+        border: solid 1px $g03;
+        background-image: url(../img/icon-arrow-down.svg);
+        background-size: 10px;
+        background-repeat: no-repeat;
+        background-position: 90%;
+        padding: 7px 40px;
+        margin-right: 15px;
+        outline: none;
+        color: $b;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+    }
+
+    &__purchase {
+        margin-top: 14px;
+
+        &::selection {
+            background: none;
+        }
+
+    }
+
+    &__price {
+        display: inline-block;
+        font-size: 30px;
+        font-weight: 100;
+    }
+
+    &__currency {
+        color: $g04;
+    }
+
+    &__addcart {
+        display: inline-block;
+        margin-left: 10px;
+        position: relative;
+        top: 5px;
+    }
+
+    &__label {
+        display: inline-block;
+        position: relative;
+        top: -5px;
+        left: 5px;
+        color: $g04;
+
+        &::selection {
+            background: none;
+        }
+
+    }
+
+    &__button {
+        margin-top: 22px;
+        width: 80px;
+        border-radius: 4px;
+        background-color: $r;
+        color: $w01;
+        padding: 12px 22px;
+        font-size: 26px;
+        font-weight: 100;
+        cursor: pointer;
+    }
+
+}

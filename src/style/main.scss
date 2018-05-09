@@ -1,0 +1,36 @@
+﻿//global
+@import "global/variables";
+@import "global/reset";
+@import "global/mixins";
+@import "global/fonts";
+@import "global/base";
+@import "global/icons";
+
+//libs
+@import "libs/nouislider.min";
+@import "libs/magnific-popup";
+
+// inc
+
+@import "inc/brand-box";
+@import "inc/brand-categories-box";
+@import "inc/brand-info-box";
+@import "inc/breadcrumbs-box";
+@import "inc/choose-box";
+@import "inc/filter-box";
+@import "inc/footer";
+@import "inc/forum-box";
+@import "inc/goods-box";
+@import "inc/goods-brand-info-box";
+@import "inc/goods-description-box";
+@import "inc/menu-catalog-box";
+@import "inc/nav";
+@import "inc/news-box";
+@import "inc/ordering-box";
+@import "inc/ordering-table";
+@import "inc/ordering";
+@import "inc/popup-box";
+@import "inc/product-table";
+@import "inc/promo-box";
+@import "inc/reviews-box";
+@import "inc/short-result-box";

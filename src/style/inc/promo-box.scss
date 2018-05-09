@@ -1,0 +1,53 @@
+﻿.promo-box {
+    margin-top: 20px;
+    background: $w01;
+    border-radius: 3px;
+    background-color: $w01;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.05);
+    padding: 12px;
+
+    @include clearfix;
+
+    &__img {
+        float: left;
+        
+        @include clearfix;
+    }
+
+    &__content {
+        display: inline-block;
+        width: 50%;
+        margin-left: 30px;
+        margin-top: 20px;
+        vertical-align: top;
+
+
+    }
+
+    &__header {
+        font-size: 28px;
+        font-family: $UF;
+        font-weight: 100;
+    }
+
+    &__desc {
+        font-family: $UF;
+        font-weight: 600;
+        font-size: 17px;
+        margin-top: 20px;
+        line-height: 22px;
+    }
+
+    &__button {
+        margin-top: 20px;
+        border-radius: 4px;
+        background-color: $b;
+        padding: 20px 17px;
+        color: $w01;
+        font-weight: 100;
+        font-family: $UF;
+        font-size: 19px;
+        display: block;
+    }
+
+}

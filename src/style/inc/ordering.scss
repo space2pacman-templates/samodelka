@@ -1,0 +1,52 @@
+﻿.ordering {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: $UF;
+    font-size: 18px;
+    font-weight: 600;
+
+    &__step-label {
+        margin-top: 5px;
+        color: $g08;
+    }
+
+    &__bottom-label {
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 25px;
+        font-size: 18px;
+        color: $g08;
+    }
+
+    &__totals {
+        float: right;
+        margin-right: 20px;
+        font-size: 18px;
+    }
+
+    &__totals-label {
+        display: inline-block;
+        color: $g08;
+        margin-top: 25px;
+    }
+
+    &__totals-count {
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 900;
+    }
+
+    &__button {
+        border-radius: 4px;
+        background-color: $b;
+        color: $w01;
+        padding: 18px 20px;
+        font-size: 26px;
+        font-weight: 100;
+        display: inline-block;
+        float: right;
+        cursor: pointer;
+    }
+
+}

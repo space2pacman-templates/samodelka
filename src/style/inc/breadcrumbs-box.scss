@@ -1,0 +1,43 @@
+﻿.breadcrumbs-box {
+    border-radius: 3px;
+    background-color: $w01;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.05);
+    font-family: $UF;
+    font-weight: 600;
+    font-size: 14px;
+    color: $b;
+
+    &__link {
+        display: inline-block;
+        position: relative;
+        margin-right: 5px;
+        padding: 13px 10px;
+
+        &:last-child {
+            margin-right: 0;
+
+            &:before {
+                content: '';
+            }
+
+        }
+
+        &:before {
+            position: absolute;
+            right: -18px;
+            top: 10px;
+            color: $g03;
+            font-size: 20px;
+        }
+
+    }
+
+    &__active {
+        color: $bl
+    }
+
+    &__goods {
+        color: $g04;
+    }
+
+}

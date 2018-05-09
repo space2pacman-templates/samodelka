@@ -1,0 +1,277 @@
+﻿nav {
+    position: relative;
+    z-index: 1;
+}
+
+.nav {
+    padding-top: 18px;
+
+    &__tagline {
+        position: relative;
+        padding: 0px 30px;
+        margin-bottom: 18px;
+        font-size: 14px;
+        font-family: $UF;
+        font-weight: 500;
+        color: $g02;
+
+        @include clearfix;
+
+    }
+
+    &__tagline-desc {
+            display: inline-block;
+            float: left;
+
+        a {
+            color: $b;
+        }
+    }
+
+    &__other {
+
+        @include clearfix;
+
+        display: inline-block;
+        float: right;
+
+    }
+
+    &__other-popup-link {
+        display: inline-block;
+        margin-right: 42px;
+        cursor: pointer;
+        color: $b;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            right: -24px;
+            top: -1px;
+            font-size: 18px;
+        }
+
+    }
+
+    &__other-link {
+        display: inline-block;
+        min-width: 75px;
+        color: $b;
+    }
+
+    &__other-number {
+        display: inline-block;
+    }
+
+    &__other-popup {
+        display: none;
+        width: 260px;
+        padding: 20px 28px;
+        position: absolute;
+        z-index: 1;
+        right: 150px;
+        top: 25px;
+        border-radius: 3px;
+        background-color: $w01;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.05);
+        border: solid 2px $b;
+    }
+
+    &__other-popup-header {
+        text-align: center;
+        margin-bottom: 10px;
+        color: $bl;
+        font-weight: 600;
+    }
+
+    &__other-popup-select {
+        border: 1px solid $g03;
+        border-radius: 4px;
+        padding: 7px 10px;
+        width: 260px;
+        outline: 0;
+        background: $w01;
+        color: $b;
+        font-weight: 600;
+        margin-top: 10px;
+        background-image: url(../img/icon-arrow-down.svg);
+        background-size: 10px;
+        background-repeat: no-repeat;
+        background-position: 96%;
+    }
+
+    &__other-popup-button {
+        border-radius: 4px;
+        background-color: $b;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.4);
+        margin-top: 10px;
+        color: $w01;
+        padding: 14px 70px;
+        font-weight: 100;
+        cursor: pointer;
+    }
+
+    &__bar {
+        display: table;
+        width: 100%;
+        height: 60px;
+        border-radius: 4px;
+        background: $w01;
+        overflow: hidden;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+
+        &--fixed {
+            position: fixed;
+            left: 0;
+            top: 0;
+            border-radius: 0;
+            border-bottom: 2px solid $b;
+            z-index: 1;
+
+            .nav__bar-logo {
+                padding: 10px 0px 10px 15px;
+            }
+
+            .nav__bar-cart {
+                padding-right: 15px;
+            }
+
+            .nav__bar-cart-icon {
+                border-radius: 0;
+            }
+
+        }
+
+    }
+
+    &__bar-logo {
+        display: table-cell;
+        vertical-align: middle;
+        width: 270px;
+        text-align: center;
+        font-size: 33px;
+        font-family: $EF;
+        padding: 10px 0;
+        margin-left: 30px;
+        margin-right: 22px;
+        color: $b;
+        
+    }
+
+    &__bar-search {
+        display: table-cell;
+        position: relative;
+        vertical-align: top;
+    }
+
+    &__bar-search-input {
+        padding-left: 65px;
+        padding-right: 110px;
+        font-style: italic;
+        font-size: 14px;
+        display: inline-block;
+        outline: none;
+        border: none;
+        width: 100%;
+        height: 60px;
+        border-left: 1px solid $g03;
+        border-right: 1px solid $g03;
+    }
+
+    &__bar-search-button {
+        position: absolute;
+        right: 22px;
+        top: 15px;
+        background: 0;
+        outline: 0;
+        border: 2px solid $b;
+        width: 70px;
+        height: 30px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+        color: $b;
+    }
+
+    &__bar-search-icon {
+        position: absolute;
+        font-size: 34px;
+        top: 12px;
+        left: 8px;
+        color: $g04;
+    }
+
+    &__bar-phone {
+        width: 255px;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 20px;
+        font-family: $EF;
+        font-weight: 600;
+        margin-top: 10px;
+        margin-left: 20px;
+        color: $b;
+
+        strong {
+            font-size: 30px;
+        }
+
+    }
+
+    &__bar-cart {
+        display: table-cell;
+        width: 60px;
+    }
+
+    &__bar-cart-icon {
+        display: table-cell;
+        background: $b;
+        border-radius: 0 4px 4px 0;
+        width: 60px;
+        height: 60px;
+    }
+
+    &__link {
+        background: $b;
+        margin-top: 20px;
+        font-family: $UF;
+        font-weight: 500;
+        font-size: 14px;
+        color: $w01;
+        border-radius: 4px;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+
+        ul {
+            padding-left: 12px;
+        }
+
+        li {
+            display: inline-block;
+            padding: 7px 18px;
+            padding-bottom: 9px;
+            position: relative;
+
+            &:after {
+                content: "";
+                width: 1px;
+                height: 10px;
+                border-left: 1px solid $w01;
+                border-right: 1px solid $w01;
+                opacity: 0.3;
+                display: block;
+                position: absolute;
+                right: -4px;
+                top: 10px;
+            }
+
+            &:last-child:after {
+                display:none;
+            }
+
+        }
+
+    }
+
+}

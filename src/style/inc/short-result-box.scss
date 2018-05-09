@@ -1,0 +1,44 @@
+﻿.short-result-box {
+    margin-top: 20px;
+    background: $w01;
+    font-family: $UF;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 3px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.05);
+
+    &__header {
+        display: table;
+        padding: 20px;
+        border-bottom: 1px solid $g03;
+    }
+
+    &__img {
+        display: table-cell;
+        vertical-align: middle;
+        padding-right: 20px;
+    }
+
+    &__desc {
+        display: table-cell;
+        line-height: 18px;
+        max-width: 410px;
+    }
+
+    &__bottom {
+        padding: 18px;
+        border-top: 1px solid $g03;
+    }
+
+    &__button {
+        display: inline-block;
+        border-radius: 3px;
+        border: solid 1px $g03;
+        font-family: $UF;
+        font-size: 14px;
+        color: $b;
+        padding: 8px 10px;
+        margin-right: 5px;
+    }
+
+}

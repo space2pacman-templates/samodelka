@@ -1,0 +1,30 @@
+﻿.goods-description-box {
+    margin-top: 20px;
+    background: $w01;
+    padding: 20px 20px;
+    font-family: $UF;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 3px;
+    line-height: 18px;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,.05);
+
+    ul {
+        list-style-type: disc;
+        margin-left: 30px;
+    }
+
+    li {
+        list-style-type: disc;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        padding: 10px;
+        border: 1px solid $g03;
+    }
+
+}

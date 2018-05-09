@@ -1,0 +1,79 @@
+﻿.popup-box {
+    width: 596px;
+    border-radius: 3px;
+    background-color: $w01;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.05);
+    border: solid 2px $b;
+    margin: 0 auto;
+    font-weight: 600;
+    font-family: $UF;
+    font-size: 14px;
+
+    &__header {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        line-height: 20px;
+        border-bottom: 1px solid $g03;
+    }
+
+    &__status {
+        font-size: 18px;
+    }
+
+    &__vendor-code {
+        color: $g08;
+    }
+
+    &__row {
+        padding: 20px 18px;
+        border-bottom: 1px solid $g03;
+    }
+
+    &__location {
+        display: inline-block;
+        line-height: 20px;
+    }
+
+    &__address {
+        color: $g08;
+    }
+
+    &__pieces {
+        float: right;
+        font-weight: 900;
+    }
+
+    &__bottom {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    &__tagline {
+        font-weight: 600;
+    }
+
+    &__input {
+        margin-top: 20px;
+        outline: none;
+        width: 240px;
+        padding: 7px 5px;
+        border-radius: 4px;
+        background-color: $w01;
+        border: solid 1px $g03;
+    }
+
+    &__button {
+        border-radius: 3px;
+        background-color: $b;
+        margin: 0 auto;
+        color: $w01;
+        display: table;
+        padding: 12px 40px;
+        margin-top: 10px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+}

@@ -1,0 +1,33 @@
+﻿.ordering-box {
+    background: $w01;
+    margin-top: 20px;
+    font-family: $UF;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.05);
+
+    &__header {
+        font-weight: 900;
+        padding: 13px 20px;
+    }
+
+    &__caption {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    &__caption-link {
+        float: right;
+        color: $b;
+        font-weight: 500;
+    }
+
+    &__change-city {
+        display: inline-block;
+        color: $b;
+        cursor: pointer;
+    }
+
+}
